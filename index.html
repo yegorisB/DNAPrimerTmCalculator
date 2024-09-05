@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DNA Primer Tm Calculator</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+    <h1>DNA Primer Tm Calculator</h1>
+    <p>Current theme source: <strong id="theme-source">System</strong></p>
+
+    <button id="toggle-dark-mode">Toggle Dark Mode</button>
+    <button id="reset-to-system">Reset to System Theme</button>
+    <FORM id="myForm"  name="Keypad" action="">
+      <input name="ReadOut" id="output" type="Text" size=24 value="Enter Your Primer Sequence Here" readonly>
+      <table>
+
+
+          <tr>
+              <td><input id="btnA" type="Button" value="  A  " onclick="LetrPressed('A')"></td>
+              <td><input id="btnT" type="Button" value="  T  " onclick="LetrPressed('T')"></td>
+              <td><input id="btnG" type="Button" value="  G  " onclick="LetrPressed('G')"></td>
+              <td><input id="btnC" type="Button" value="  C  " onclick="LetrPressed('C')"></td>
+              </tr> 
+          </table>
+      <table>
+               
+             <tr><td><label> A:</label></td><td><p id="aN"></p></td> </tr> 
+             <tr><td><label> T:</label></td><td><p id="tN"></p></td> </tr> 
+             <tr><td><label> G:</label></td><td><p id="gN"></p></td> </tr> 
+             <tr><td><label> C:</label></td><td><p id="cN"></p></td> </tr> 
+             <tr><td><label> primer</label></td><td><p id="prim"></p></td> </tr> 
+             <tr><td><label>Tm=4*(#g+#c)+2*(#a+#t) centigrades</label></td><td><p id="Tm"></p></td>  </tr> 
+              
+           </table>   
+      
+      <button onclick="myReload()" id="NewPrimer">New Primer</button>
+
+          
+  </FORM>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

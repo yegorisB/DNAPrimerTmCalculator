@@ -1,0 +1,101 @@
+:root {
+    color-scheme: light dark;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    body { background: #0d3277; color: #a866f3;}
+  }
+  
+  @media (prefers-color-scheme: light) {
+    body { background: #0eb6b6;; color: #0eb6b6; }
+  }
+
+  input[type="button"] {   
+
+    border: 1px solid #606060;
+    display: inline-block;    
+    font-family: Arial;
+    font-size: 50px;
+    line-height: 28px;   
+    text-align: center;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+    height: 75px;
+    width: 100px;
+    
+    
+}
+
+#toggle-dark-mode { 
+    background-color: #23c8ce;
+     width: 200px;
+     height: 30px;
+    color: #1f1074;
+    padding-bottom: 10px;
+    
+   
+}
+
+#reset-to-system { 
+    background-color: #23c8ce;
+     width: 200px;
+     height: 30px;
+    color: #1f1074;
+    padding-bottom: 10px;
+    
+   
+}
+
+#NewPrimer{ 
+    background-color: #23c8ce;
+     width: 200px;
+     height: 30px;
+    color: #1f1074;
+    
+   
+}
+
+
+
+input[type="button"]:active {
+    position: relative;
+    background:  #580d7a;
+}   
+input:focus {
+    outline: 100;
+}
+
+#output[type="Text"] {
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 40px;
+    background-color:  #b98106;
+    height:100px;
+    width: 9350px;
+    border: none;
+    color: white;
+}
+
+body {
+    background-color: #104a7a;
+    overflow: hidden;
+}
+
+
+table {
+    table-layout: fixed;
+    font-size: 20px; 
+     
+width: 50%;
+}
+
+
+td {
+width: 40px;
+height: 60px;
+}
+  
